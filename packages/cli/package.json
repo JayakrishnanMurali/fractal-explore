@@ -4,6 +4,9 @@
   "private": true,
   "type": "module",
   "main": "./src/index.ts",
+  "bin": {
+    "fractal-explore": "./bin/fractal-explore.ts"
+  },
   "dependencies": {
     "commander": "^11.0.0",
     "chokidar": "^3.5.3",
