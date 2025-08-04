@@ -1,0 +1,25 @@
+{
+  "name": "@fractal-explore/cli",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "chokidar": "^3.5.3",
+    "react-docgen": "^7.0.0",
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0",
+    "typescript": "^5.2.0",
+    "xxhash-wasm": "^1.0.2",
+    "msgpackr": "^1.9.7",
+    "execa": "^8.0.1",
+    "@rspack/core": "^0.4.0",
+    "@rspack/dev-server": "^0.4.0",
+    "@fractal-explore/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "bun-types": "^1.0.0"
+  }
+}

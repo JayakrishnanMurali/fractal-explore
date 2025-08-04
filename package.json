@@ -1,0 +1,66 @@
+{
+  "name": "fractal-explore",
+  "version": "1.0.0",
+  "description": "Zero-config component explorer for React applications",
+  "bin": {
+    "fractal-explore": "./dist/cli/bin/fractal-explore.js"
+  },
+  "main": "./dist/cli/index.js",
+  "type": "module",
+  "files": [
+    "dist/",
+    "templates/",
+    "README.md"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "trustedDependencies": [
+    "@rspack/core"
+  ],
+  "scripts": {
+    "build": "bun run scripts/build.ts",
+    "bundle": "bun run scripts/bundle.ts",
+    "dev": "bun run packages/cli/src/index.ts",
+    "test": "bun test",
+    "release": "bun run scripts/release.ts"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "storybook",
+    "development-tools",
+    "ui-library"
+  ],
+  "dependencies": {
+    "commander": "^11.0.0",
+    "chokidar": "^3.5.3",
+    "react-docgen": "^7.0.0",
+    "@babel/parser": "^7.23.0",
+    "@babel/traverse": "^7.23.0",
+    "typescript": "^5.2.0",
+    "xxhash-wasm": "^1.0.2",
+    "msgpackr": "^1.9.7",
+    "execa": "^8.0.1",
+    "@rspack/core": "^0.4.0",
+    "@rspack/dev-server": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/react": "^18.2.0",
+    "bun-types": "^1.0.0",
+    "@types/bun": "latest"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/fractal-explore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/fractal-explore/issues"
+  },
+  "homepage": "https://github.com/yourusername/fractal-explore#readme",
+  "license": "MIT"
+}
